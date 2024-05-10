@@ -1,0 +1,194 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    text-align: right;
+    color: black;
+    justify-content: space-between;
+    display: flex;
+}
+nav ul{
+    list-style-type: none;
+    margin-block: 0;
+    padding:0px;
+    display:flex;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    
+}
+.co{
+    
+    background-image: linear-gradient(to right,rgb(163, 234, 243),rgb(223, 189, 145),rgb(202, 143, 182));
+}
+li{
+    display: inline;
+}
+li:hover{
+    background-color: rgba(255, 255, 255, 0.664);
+}
+
+ul a{
+    padding:1rem 2rem 1rem 2rem;
+    text-decoration: none;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    display: block;
+}
+nav h3{
+    margin-bottom: 0;
+    font-family: "Pacifico", cursive;
+    font-size:2rem;
+    font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.buttontog{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 0.65rem;
+    right: 1rem;
+    width: 21px;
+    height: 20px;
+    justify-content:space-between;
+}
+.buttontog .bar{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+@media (max-width:1200px){
+    span.loginf{
+        top: 55%;
+        left: 5%;
+        padding: 8rem;
+        
+    }
+    div span.welcome{
+        padding: 6rem;
+        max-width: 100%;
+        max-height: 100%;
+        left: 0;
+    }
+}
+@media (max-width:991px) {
+    
+    span.loginf{
+        top: 55%;
+        left: 5%;
+        padding: 3rem;
+        
+    }
+    div span.welcome{
+        padding: 2.5rem;
+        max-width: 100%;
+        max-height: 100%;
+        left: 0;
+    }
+
+}
+@media (max-width:675px){
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    .buttontog{
+        display: flex;
+    }
+    .links{
+        display: none;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .links a{
+        padding:.5rem 1rem;
+    }
+    .links.active{
+        display: flex;
+    }
+    div.a{
+        padding: 9rem 0rem;
+    }
+    div span.welcome{
+        margin-top: 10px;
+        padding: 4.5rem;
+        max-width: 100%;
+        max-height: 100%;
+        left: 0;
+        position: relative;
+        border-radius:  60px 60px 60px  60px ;
+    }
+    span.loginf{
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        padding: 1rem;
+        border-radius: 60px 60px 60px  60px ;
+        ;
+        
+    }
+    div.a{
+        display:grid;
+        padding: 0rem;
+    }
+
+}
+/* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmTe8ks6TvjzBYUHS-boFMrdSDGI-wYsEfZuWIOUCukyUJZ_FQp5BYuPNuktwHdB66OWc&usqp=CAU */
+.a{
+    background-color: #f32170;
+    display: flex;
+    background-image: -webkit-image-set("https://image-processor-storage.s3.us-west-2.amazonaws.com/images/a3627d6c1e59636360b65d5707db2e61/abstract-rose-quarz-pink-fusia-background.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    padding: 11.4rem 0rem;
+    height: 100vh;
+    width: 100%;
+}
+.welcome{
+    font-family: "Pacifico", cursive;
+    font-size: 3rem;
+    /* background-color: #d4ca6d; */
+    padding: 10rem;
+    display:flex;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 60px 0 0 60px ;
+    background:  linear-gradient(to bottom,white,rgb(105, 194, 188),rgb(205, 129, 166));
+}
+.loginf{
+    /* //background-color: rgb(105, 201, 201); */
+    font-size:2rem ;
+    font-family: "Pacifico", cursive;
+    padding: 8rem;
+    border-radius:  0 60px 60px  0 ;
+    background:  linear-gradient(to bottom,rgb(129, 205, 167),rgb(105, 135, 194),rgb(25, 25, 25));
+    
+}
+input{
+    height: 50px;
+    width: 300px;
+    border:2px solid rgb(60, 139, 163) ;
+    border-radius: 1rem;
+    
+}
+.submitbtn{
+    width: 50%;
+    margin: 0% 0% 0% 25%;
+}
+div.container{
+    width: 100%;
+}
