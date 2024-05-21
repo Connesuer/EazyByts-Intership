@@ -1,0 +1,148 @@
+:root{
+    --primary:white;
+    --secondary:rgb(0, 0, 0);
+    --accent:orange;
+    --accent1:rgb(82, 185, 216);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(" https://images.pexels.com/photos/21014/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    padding-top: 30px;
+    
+}
+nav{
+    
+    color: var(--primary);
+    border-bottom: 2px solid var(--secondary);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin: 0 0 0 0;
+    padding: 0;
+    
+}
+
+
+li{
+    display: inline;
+    
+}
+li a{
+    padding: 0 40px ;
+    display: block; 
+    text-decoration: none;
+    color: var(--primary);
+    line-height: 55px;
+    
+    
+}
+li a:hover{
+    background-color: rgba(0, 0, 0, 0.2 );
+}
+
+.title{ 
+    font-size: 2.2rem;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    color:var(--primary);
+    font-family: "Danfo", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "ELSH" 0;
+}
+
+
+.content{
+    p{
+        padding-top: 35px;
+    }
+    text-align: center;
+    color: var(--primary);
+    font-size: 1.2rem;
+    h2{
+        text-align: left;
+        padding-top: 10%;
+        font-size: 5rem;
+        color: var(--secondary);
+    }
+}
+
+
+
+
+
+@media(max-width:800px){
+
+
+
+    .content{
+        p{
+            padding-top: 35px;
+        }
+        text-align: center;
+        color: var(--primary);
+        font-size: 1.1rem;
+        h2{
+            text-align: left;
+            padding-top: 10%;
+            font-size: 3.7rem;
+            color: var(--secondary);
+        }
+    }
+    
+
+
+
+    li a{
+        padding: 0 15px;
+        display: block; 
+        text-decoration: none;
+        color: var(--primary);
+        line-height: 55px;
+        
+        
+    }
+
+
+}
+
+@media (max-width:550px) {
+    
+    .content{
+        p{
+            padding-top: 35px;
+        }
+        text-align: center;
+        color: var(--primary);
+        font-size: 1rem;
+        h2{
+            text-align: left;
+            padding-top: 10%;
+            font-size: 3.2rem;
+            color: var(--secondary);
+        }
+    }
+
+}
