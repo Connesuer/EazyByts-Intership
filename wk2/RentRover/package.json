@@ -2,7 +2,7 @@
   "name": "proj",
   "version": "1.0.0",
   "description": "car rental app",
-  "main": "index.js",
+  "main": "RentRoverApplication.java",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
