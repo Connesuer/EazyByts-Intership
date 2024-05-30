@@ -1,0 +1,157 @@
+:root{
+    --primary:black;
+    --secondary:white;
+    --accent:lightgreen;
+    /* --primary:red;
+    --secondary:lightgreen;
+    --accent:yellow; */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    padding-top: 50px;
+    min-height:100vh;
+    width: 100%;
+}
+
+header{
+    border-bottom: 2px solid var(--primary);
+    box-shadow: 0 0 5px var(--accent);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1111111;
+    background: var(--secondary);
+}
+.logo{
+    margin: 0px;
+    font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+nav ul{
+  list-style:none;  
+  padding:0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  a{
+    text-decoration: none;
+    color: var(--primary);
+
+  }
+}
+nav ul li{
+    display: inline;
+    padding: 0px 22px;
+  margin: 0px;
+   
+}
+nav ul li:hover{
+    color: var(--accent);
+}
+
+
+
+div section{
+    position: relative;
+    min-height: calc(100vh - 50px);
+    width: 100%;
+    border-bottom: 2px solid var(--secondary);
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    color: var(--secondary);
+}
+div section .img{
+
+    height: calc(100vh - 50px);
+    width: 100%;
+    object-fit:cover;
+}
+div section:first-child{
+    background: url("https://wallpapers.com/images/featured/running-background-wl9pg3zeygysq0ps.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .contentindiv{
+        position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--secondary);
+    
+    h1{
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    }
+}
+
+div .contentindiv{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        margin: 10px;
+        height: 250px;
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 0 10px var(--accent);
+    }
+    span h3{
+        color: var(--accent);
+    }
+}
+
+footer{
+    background: var(--primary);
+    color: white;
+
+
+        padding-top: 15px;
+        .footer-display{
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        flex-direction: row;
+        }
+        
+        a{
+            text-decoration: none;
+            color: var(--secondary);
+        }
+    
+}
+
+
+@media(max-width:700px){
+
+div .contentindiv{
+    display: flex;
+    flex-direction: column;
+}
+
+div section:first-child{
+    .contentindiv{
+    h1{
+        font-size: 3.1rem;
+    }}
+}
+
+footer{
+    .footer-display{
+        flex-direction: column;
+    }
+}
+
+}

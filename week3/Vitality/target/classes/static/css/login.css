@@ -1,0 +1,105 @@
+:root{
+    --primary:black;
+    --secondary:white;
+    --accent:lightgreen;
+    /* --primary:red;
+    --secondary:lightgreen;
+    --accent:yellow; */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    
+min-height: 100vh;
+width: 100%;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://static.vecteezy.com/system/resources/previews/028/099/816/non_2x/back-view-of-athlete-runner-feet-running-on-the-road-rainy-season-ai-generative-free-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-holder{
+    
+    position: absolute;
+    background-color: var(--secondary);
+    top: 0;
+    left: 0;
+    width: 100%;
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.logo{
+    margin: 0px;
+    font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+fieldset .alert{
+    padding: 0px 4.3rem;
+}
+
+
+.form-container{
+    color: var(--primary);
+    border: 1px solid var(--secondary);
+    padding: 7rem 5rem;
+    box-shadow: 0px 0px 5px var(--secondary);
+    border-radius: 3px;
+    backdrop-filter: blur(3px);
+    
+}
+
+fieldset{
+    
+    
+    
+    
+
+    .form-heading{
+
+        font-size: 2rem;
+        text-decoration: underline;
+        
+    }
+    
+    .password{
+        padding: 1rem 10rem 0 0;
+
+        font-size: 1.3rem;
+    }
+    .username{
+        padding: 1rem 10rem 0 0;
+
+        font-size: 1.3rem;
+    }
+    .password-input{    
+        background: none;
+        outline: none;
+        border: none;
+        border-bottom: 2.3px solid var(--primary);
+        margin-bottom: 2rem;
+        padding-right: 45%;
+    }
+    .username-input{
+        background: none;
+        outline: none;
+        border: none;
+        border-bottom: 2.3px solid var(--primary);
+        margin-bottom: 2rem;
+        padding-right: 45%;
+    }
+}

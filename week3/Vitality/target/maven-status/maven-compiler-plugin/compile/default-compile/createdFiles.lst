@@ -1,0 +1,4 @@
+com\Vitality\Vitality\controller\LoginPage.class
+com\Vitality\Vitality\VitalityApplication.class
+com\Vitality\Vitality\controller\WebsiteController.class
+com\Vitality\Vitality\config\loginConfig.class
